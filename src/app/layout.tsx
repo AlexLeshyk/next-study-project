@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import { PropsWithChildren } from "react";
-
-export const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
+import { roboto } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
