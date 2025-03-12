@@ -4,6 +4,8 @@ import clsx from "clsx";
 import { PropsWithChildren } from "react";
 import { roboto } from "./fonts/fonts";
 import { Header } from "@/components/layout/header";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { SideBarRight } from "@/components/SideBarRight";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +16,9 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
       <body className={clsx("antialiased ", `${roboto.className}`)}>
-      <div className="bg-white border-b border-gray">
-        <Header />
-      </div>
+        <div className="bg-white border-b border-gray">
+          <Header />
+        </div>
         <main className="bg-background w-full">{children}</main>
       </body>
     </html>
