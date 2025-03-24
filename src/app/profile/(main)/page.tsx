@@ -1,14 +1,10 @@
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+"use client";
+import { ProfileInfo } from "@/components/ProfileInfo";
 
 export default function ProfilePage() {
   return (
-    <div>
-      <div>Main page</div>
-      <div className="grid w-full max-w-sm items-center gap-1.5">
-        <Label htmlFor="email">Email</Label>
-        <Input type="email" id="email" placeholder="Email" />
-      </div>
+    <div className="flex w-full items-center gap-8">
+      <ProfileInfo />
     </div>
   );
 }
